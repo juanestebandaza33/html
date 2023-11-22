@@ -1,0 +1,49 @@
+CREATE TABLE tb_cliente(
+    idCliente varchar (11),
+    nomCliente varchar (30),
+    apeCliente varchar (30),
+    dirCliente varchar (100),
+    depCliente varchar (20),
+    mesCumCliente varchar (10))
+
+
+    idArticulo int, 
+    titArticulo varchar (100),
+    autArticulo varchar (100),
+    ediArticulo varchar (30),
+    preArticulo int 
+
+    idPedido int autoincrementable,
+    idCliPedido_fk  Varchar (11),
+    fecPedido Date,
+    valPedido int 
+
+CREATE TABLE tb_ArticuloxPedido(
+    conArticuloxPedido int,
+    idPedArticuloxPedido_fk Int,
+    idArtArticuloxPedido_fk Int,
+    canArticuloxPedido Int,
+    valVenArticuloxPedido int
+)
+
+CREATE TABLE tb_estudiante_Curso(
+	conEstudiantexCurso Int PRIMARY KEY,
+	codCurEstudiantexCurso_fk Int,
+	docEstEstudiantexCurso_fk Varchar (11),
+	fecIniEstudiantexCurso Date)
+
+
+CREATE TABLE tb_curso(
+    codCurso int,
+    nomCurso Varchar (100),
+    horCurso Int,
+    valCurso Int)
+
+
+CREATE TABLE tb_curso(
+    conProfesorxcurso xCurso_fk Int,
+    codCurProfesorxcurso_fk Int,
+    docProfProfesorxcurso_fk Varchar 11,
+    fecIniProfesorxcurso Date,
+    fecFinProfesorxcurso Date,
+    jorProfesorxcurso Varchar (2))  
